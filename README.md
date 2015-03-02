@@ -12,8 +12,8 @@ We ordered our cards from http://www.drukland.nl/. Their design specifications a
 1. Go to *file->Save As...* and save the card as a PDF.
 2. In the dialog box, choose *PDF 1.5* and check *Convert text to paths*. Set the DPI to 300.
 3. Convert the saved PDF to CMYK using the following command from the *ghostscript* package:
-'''sh
+```sh
 gs -dSAFER -dBATCH -dNOPAUSE -dNOCACHE -sDEVICE=pdfwrite \
     -sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK \
     -sOutputFile=single_cmyk.pdf single.pdf
-'''
+```
