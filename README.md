@@ -17,3 +17,9 @@ gs -dSAFER -dBATCH -dNOPAUSE -dNOCACHE -sDEVICE=pdfwrite \
     -sColorConversionStrategy=CMYK -dProcessColorModel=/DeviceCMYK \
     -sOutputFile=single_cmyk.pdf single.pdf
 ```
+
+## Update
+Converting the RGB colors to CMYK yielded bad results when we sent the business cards off to be printed. The black was a bit dull and the orange was too red. 
+To solve this, we used adobe illustrator to change the black to 30%/30%/30%/100% CMYK and the 'bitlair orange' (#FD5A1F)is close to 0%/79%/97%/0%.
+
+The updated file is called *bitlair-colourfix.pdf*.
